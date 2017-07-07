@@ -10,6 +10,8 @@ McCulloch是美国神经科学家，Pitts是数学家，他们合作做出的M-P
 
 ![](https://github.com/NGSHotpot/deep-learning/blob/master/images/M-P/1.png)
 
+图片来自维基百科（https://zh.wikipedia.org/wiki/%E7%A5%9E%E7%B6%93%E5%85%83）
+
 ## M-P模型
 
 McCulloch和Pitts根据神经元传递信号的原理，通过数学模型对神经元工作模型进行简化，建立了M-P模型。对神经元他们做出如下假设：
