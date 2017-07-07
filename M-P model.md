@@ -29,3 +29,58 @@ McCulloch和Pitts根据神经元传递信号的原理，通过数学模型对神
 模型假设第五点是说某个神经元的结构是不改变。
 
 在这五点假设的基础上，McCulloch和Pitts提出了他们的M-P模型。
+
+![](https://github.com/NGSHotpot/deep-learning/blob/master/images/M-P/2.png)
+
+上图中的![equation](http://latex.codecogs.com/gif.latex?X_1,X_2,X_3)模型的是其他不同的神经元给当前神经元传递的信号，其中![equation](http://latex.codecogs.com/gif.latex?X_1,X_2,X_3)可以取0或者1。![equation](http://latex.codecogs.com/gif.latex?Y)也可以取值0（不激活）或者1（激活），代表该神经受到刺激后的输出。![equation](http://latex.codecogs.com/gif.latex?w_1,w_2,w_3)分别对应为![equation](http://latex.codecogs.com/gif.latex?X_1,X_2,X_3)的权重，该权重可以取正值代表刺激作用，取负值代表抑制作用。![equation](http://latex.codecogs.com/gif.latex?threshold)代表阈值，即要激活当前神经元需要的信息号强度。
+
+下面举个例子来说明该模型的工作情况。若设定![equation](http://latex.codecogs.com/gif.latex?w_1=1,w_2=1,w_3=1,X_1=1,X_2=0,X_3=1,threshold=2)，输入信号经过加权得到![equation](http://latex.codecogs.com/gif.latex?X_1w_1+X_2w_2+X_3=2\geq{threshold}),所以输出的型号![equation](http://latex.codecogs.com/gif.latex?Y=1)。
+
+上面的模型是经过修饰的，原始的M-P模型展示形式不是这样的。我们首先来看一下原文中的图。
+
+![](https://github.com/NGSHotpot/deep-learning/blob/master/images/M-P/3.png)
+
+图片来自《A Logical Calculus of Ideas Immanent in Nervous Activity》
+
+原文是通过上面的图形及一大堆数学公式来展示M-P模型的。
+
+## 理解M-P模型
+
+我们先简单解释刚才给出的图形所代表的意义。主要有两个类型的子图形：
+
+![](https://github.com/NGSHotpot/deep-learning/blob/master/images/M-P/4.png)
+
+看到上面有两种不同的信号输入，一种是黑色实心的叫激活信号，另外一种是空心的叫抑制信号。
+
+下面我们使用M-P模型来表示常见的逻辑门
+
+1. NOT（非门）
+非门取反，若是输入为1则输出0，输入为0则输出1。
+
+![](https://github.com/NGSHotpot/deep-learning/blob/master/images/M-P/5.png)
+
+给一个固定的激活信号，且权重为1，输入作为一个抑制信号传递给神经元，那么若输入为1，那么被抑制后传递信号-1，与固定激活信号1相互抵消，小于阈值1，输出信号0。同样的，若是输入信号为0，得到激活信号1，等于阈值1，所以输出信号1。
+
+2. AND （与门）
+与门取交，若输入的两个信号同时为1，则输出1，否则输出0
+
+![](https://github.com/NGSHotpot/deep-learning/blob/master/images/M-P/6.png)
+
+上述模型中，取权重都为1，threshold为2，那么只有当输入信号都为1的时候，1+1=2才可能使得神经元激活。
+
+3. OR （或门）
+或门取并，若输入信号中至少有一个1，那么输出1，否则输出0
+
+![](https://github.com/NGSHotpot/deep-learning/blob/master/images/M-P/6.png)
+
+还是这个图，需要改变的只是将threshold改为1即可。
+
+## M-P模型的问题
+
+上面说了M-P模型可以表示非门、与门、或门，但是我们还知道一个异或门，M-P模型是否能表示异或门呢？M-P模型的问题就在这里，单层的M-P模型是无法解决异或问题的，因为异或问题是线性不可分问题，而M-P模型是线性模型。但是若是使用将多个M-P神经元组成多层的M-P模型就可以解决异或问题啦。
+
+## 参考文献
+
+1. A Logical Calculus of Ideas Immanent in Nervous Activity
+2. http://ecee.colorado.edu/~ecen4831/lectures/NNet2.html
+3. https://zh.wikipedia.org/wiki/%E7%A5%9E%E7%B6%93%E5%85%83
