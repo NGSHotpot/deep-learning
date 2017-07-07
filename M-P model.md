@@ -59,6 +59,7 @@ McCulloch和Pitts根据神经元传递信号的原理，通过数学模型对神
 下面我们使用M-P模型来表示常见的逻辑门
 
 1. NOT（非门）
+
 非门取反，若是输入为1则输出0，输入为0则输出1。
 
 ![](https://github.com/NGSHotpot/deep-learning/blob/master/images/M-P/5.png)
@@ -66,6 +67,7 @@ McCulloch和Pitts根据神经元传递信号的原理，通过数学模型对神
 给一个固定的激活信号，且权重为1，输入作为一个抑制信号传递给神经元，那么若输入为1，那么被抑制后传递信号-1，与固定激活信号1相互抵消，小于阈值1，输出信号0。同样的，若是输入信号为0，得到激活信号1，等于阈值1，所以输出信号1。
 
 2. AND （与门）
+
 与门取交，若输入的两个信号同时为1，则输出1，否则输出0
 
 ![](https://github.com/NGSHotpot/deep-learning/blob/master/images/M-P/6.png)
@@ -73,6 +75,7 @@ McCulloch和Pitts根据神经元传递信号的原理，通过数学模型对神
 上述模型中，取权重都为1，threshold为2，那么只有当输入信号都为1的时候，1+1=2才可能使得神经元激活。
 
 3. OR （或门）
+
 或门取并，若输入信号中至少有一个1，那么输出1，否则输出0
 
 ![](https://github.com/NGSHotpot/deep-learning/blob/master/images/M-P/6.png)
