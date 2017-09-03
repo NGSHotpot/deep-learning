@@ -13,4 +13,8 @@
 
 5. 1969年：Minsky和Papert证明感知器无法解决复杂逻辑函数（比如异或），导致了神经网络在当时近十几年的寒冬，发展缓慢，研究者对其失去信心和研究动力。
 
-6. 
+6. 1970s：Fukushima提出Neocognitron模型，该模型中用到神经元间的局部连接性，该模型对卷积神经网络产生启发。
+
+7. 1986年：Rumelhart，Hinton及Willians等人提出反向传播算法（backpropagation learning algorithm），并应用到多层感知器网络中。该算法是神经网络发展中的里程碑，引发神经网络的又一次高潮。
+
+8.
