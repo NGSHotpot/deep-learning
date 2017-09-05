@@ -11,7 +11,7 @@
 
 1. 卷积神经网络介绍 （https://www.bilibili.com/video/av13260183/?from=search&seid=4888708089245302824#page=1）
 
-2. 图像分类 （https://www.bilibili.com/video/av13260183/?from=search&seid=4888708089245302824#page=2）
+2. 图像分类流程 （https://www.bilibili.com/video/av13260183/?from=search&seid=4888708089245302824#page=2）
 
 3. 损失函数和最优化（https://www.bilibili.com/video/av13260183/?from=search&seid=4888708089245302824#page=3）
 
