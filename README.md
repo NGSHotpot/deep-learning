@@ -14,3 +14,5 @@
 
 6. ![Stanford深度学习课程|第三课损失函数及最优化](https://github.com/NGSHotpot/deep-learning/blob/master/%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0%E5%8F%8A%E6%9C%80%E4%BC%98%E5%8C%96.md)
 
+7. ![Stanford深度学习课程|第四课神经网络及反向传播算法](https://github.com/NGSHotpot/deep-learning/blob/master/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%8F%8A%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95.md)
+
