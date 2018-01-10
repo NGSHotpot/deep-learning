@@ -16,3 +16,4 @@
 
 7. [Stanford深度学习课程|第四课神经网络及反向传播算法](https://github.com/NGSHotpot/deep-learning/blob/master/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%8F%8A%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95.md)
 
+8. [Stanford深度学习课程|第五课卷积神经网络](https://github.com/NGSHotpot/deep-learning/blob/master/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C.md)
